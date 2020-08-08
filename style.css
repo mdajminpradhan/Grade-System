@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('exams.jpg');
+    background-position: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 40%;
+    margin: 200px auto;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    height: 350px;
+    position: relative;
+}
+
+.left-colum {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin-top: 50px;
+}
+
+.border {
+    background: skyblue;
+    height: 150px;
+    width: 5px
+}
+
+.title {
+    color: deepskyblue;
+    font-family: monospace;
+    font-size: 2.2rem;
+    animation: myanimation 2s infinite linear alternate-reverse;
+}
+
+@keyframes myanimation {
+    from {
+        transform: scale(.95);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+form {
+    margin-top: 35px;
+}
+
+form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid deepskyblue;
+    padding: 5px 10px;
+    background: rgba(61, 59, 59, 0.1);
+    margin: 10px 0px;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form input[type=button] {
+    background: deepskyblue;
+    color: black;
+    width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form input[type=submit]:hover {
+    transform: scale(.9)
+}
+
+.result {
+    color: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-top: -60px;
+}
